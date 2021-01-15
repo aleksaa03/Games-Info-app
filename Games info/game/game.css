@@ -1,0 +1,82 @@
+:root {
+  --a: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.game-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.game-data img {
+  height: 600px;
+  width: 1200px;
+}
+.game-data h1,
+.game-data h4,
+.game-data h2,
+.game-data .stores {
+  margin: 10px 0;
+  font-weight: 500;
+}
+.game-data .stores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-data .stores a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: var(--a);
+  cursor: pointer;
+}
+.game-data .stores a:hover {
+  text-decoration: underline;
+}
+.dark {
+  background: #000000;
+  color: #ffffff;
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .game-data img {
+    height: 300px;
+    width: 100%;
+  }
+  .game-data #platform {
+    width: 90%;
+    margin: auto;
+  }
+  .game-data .stores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .game-data .stores a {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .game-data img {
+    height: 300px;
+    width: 100%;
+  }
+  .game-data #platform {
+    width: 90%;
+    margin: auto;
+  }
+  .game-data .stores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .game-data .stores a {
+    margin: 5px;
+  }
+}

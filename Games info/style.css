@@ -1,0 +1,108 @@
+:root {
+  --card: #f2f2f2;
+  --game-data: #e0e0e0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  transition: 0.25s;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+.main .header {
+  text-align: center;
+}
+.main .header h1,
+.header input[type="text"] {
+  margin: 10px 0;
+}
+.main .header input[type="text"] {
+  height: 20px;
+  width: 400px;
+  padding: 5px;
+}
+.main .header .ball {
+  height: 20px;
+  width: 20px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 100%;
+  margin: auto;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.main #result {
+  padding-top: 2%;
+  font-size: 25px;
+}
+.main .cards {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .cards .card {
+  background: var(--card);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.main .cards .card:hover {
+  transform: scale(1.01);
+}
+.main .cards .card .game-image,
+.card .game-data {
+  margin: 2px 0;
+}
+.main .cards .card .game-image img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.main .cards .card .game-data {
+  background: var(--game-data);
+  padding: 10px;
+  border-radius: 10px;
+}
+.main .cards .card .game-data h1,
+.game-data h4 {
+  font-weight: 500;
+  margin: 5px 0;
+}
+.main .cards .card .game-data h1 {
+  font-size: 20px;
+}
+.dark {
+  background: #000000;
+  color: #ffffff;
+}
+@media only screen and (max-width: 420px) {
+  .main .header input[type="text"] {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main .header input[type="text"] {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .main .header input[type="text"] {
+    width: 250px;
+  }
+  .main .cards .card {
+    margin: 10px 0;
+  }
+}
